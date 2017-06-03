@@ -1,0 +1,101 @@
+			
+	<section class="main-content">				
+				<div class="row">
+					<div class="span5">					
+						<h4 class="title"><span class="text"><strong>Login</strong> Form</span></h4>
+						<form action="#" method="post" name="loginform">
+							<input type="hidden" name="next" value="/">
+							<fieldset>
+								<div class="control-group">
+									<label class="control-label">Username</label>
+									<div class="controls">
+										<input type="text" placeholder="Enter your username" id="username" class="input-xlarge" ng-model="login.name" ng-required="true">
+									</div>
+								</div>
+								<div class="control-group">
+									<label class="control-label">Password</label>
+									<div class="controls">
+										<input type="password" placeholder="Enter your password" id="password" class="input-xlarge" ng-model="login.password" ng-required="true">
+									</div>
+								</div>
+								<div class="control-group">
+									<a class="reset" class="control-label">{{status}}</a>
+								</div>
+								<div class="control-group">
+									<input tabindex="3" class="btn btn-inverse large" type="button" value="Sign into your account" ng-click="loginform.$valid && checkCustomer(login.name,login.password)"/>
+									<hr>
+									<p class="reset">Recover your <a tabindex="4" href="#recover" title="Recover your username or password">username or password</a></p>
+								</div>
+							</fieldset>
+						</form>				
+					</div>
+					<div class="span7">					
+						<h4 class="title"><span class="text"><strong>Register</strong> Form</span></h4>
+						<form action="#" method="post" class="form-stacked" name="myform">
+							<fieldset>
+							<div class="control-group">
+									<label class="control-label">Name<a>*</a></label>
+									<div class="controls">
+										<input type="text" placeholder="name" class="input-xlarge" ng-model="customer.name" ng-required="true">
+									</div>
+								</div>
+								<div class="control-group">
+									<label class="control-label">Address<a>*</a></label>
+									<div class="controls">
+										<input type="text" placeholder="street and apt#" class="input-xlarge" ng-model="customer.address" ng-required="true">
+									</div>
+								</div>
+								<div class="control-group">
+									<label class="control-label">City<a>*</a></label>
+									<div class="controls">
+										<input type="text" placeholder="city" class="input-xlarge" ng-model="customer.city" ng-required="true">
+									</div>
+								</div>
+								<div class="control-group">
+									<label class="control-label">State<a>*</a></label>
+									<div class="controls">
+										<input type="text" placeholder="CA" class="input-xlarge" ng-model="customer.state" ng-required="true">
+										
+									</div>
+								</div>
+								<div class="control-group">
+									<label class="control-label">Zip<a>*</a></label>
+									<div class="controls">
+										<input type="text" placeholder="12345" class="input-xlarge" ng-model="customer.zip" ng-required="true">
+									</div>
+								</div>
+								<div class="control-group">
+									<label class="control-label">Phone Number<a>*</a></label>
+									<div class="controls">
+										<input type="text" placeholder="(123) 234-4567" class="input-xlarge" ng-model="customer.phonenumber" ng-required="true">
+									</div>
+								</div>
+								<div class="control-group">
+									<label class="control-label">Email Address<a>*</a></label>
+									<div class="controls">
+										<input type="email" placeholder="abc@xyz.com" class="input-xlarge" ng-model="customer.email" ng-required="true">
+									</div>
+								</div>
+								<div class="control-group">
+									<label class="control-label">Username<a>*</a></label>
+									<div class="controls">
+										<input type="text" placeholder="username" class="input-xlarge" ng-model="customer.username" ng-required="true">
+									</div>
+								</div>
+								<div class="control-group">
+									<label class="control-label">Password<a>*</a></label>
+									<div class="controls">
+										<input type="password" placeholder="password" class="input-xlarge" ng-model="customer.password" ng-required="true">
+									</div>
+								</div>
+								<div class="control-group">
+									<label class="control-label"><a>* Mandatory Fields</a></label>
+									
+								</div>
+								<input tabindex="9" class="btn btn-inverse large" type="button" value="Create your account" ng-click="myform.$valid && addCustomer()"/>
+							</fieldset>
+						</form>							
+					</div>
+				</div>
+			</section>
+			

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "662397234397",
+    "firebase_url": "https://cmpe272-449ad.firebaseio.com",
+    "project_id": "cmpe272-449ad",
+    "storage_bucket": "cmpe272-449ad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:662397234397:android:180d1788790629ca",
+        "android_client_info": {
+          "package_name": "com.purvapatel.perfectdecore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "662397234397-ddlqnd4spg0k402bf40teuc88c25v6h2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAnKOLWMm3vjA7FMeLkTxUvzuFEv3r3fk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

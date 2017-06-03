@@ -1,0 +1,76 @@
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <!--[if ie]><meta content='IE=8' http-equiv='X-UA-Compatible'/><![endif]-->
+    <!-- bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="css/bootstrappage.css" rel="stylesheet"/>
+    <!-- global styles -->
+    <link href="css/flexslider.css" rel="stylesheet"/>
+    <link href="css/main.css" rel="stylesheet"/>
+
+    <!-- scripts -->
+    <script src="js/jquery-1.7.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/superfish.js"></script>
+    <script src="js/jquery.scrolltotop.js"></script>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+
+<body>
+<h4 class="title">
+	<span class="pull-left"><span class="text"><span class="line"><strong>Checkout</strong></span></span></span>
+</h4>
+<div></div>
+
+<div id="top-bar" class="container">
+    <div class="row">
+		<div class="span4"></div>
+        <div class="span4">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div class="col-lg-3">
+
+<form action="/checkout" method="POST" ng-model="payForm" id="payment-form" >
+    <span class="payment-errors"></span>
+
+    <div class="form">
+            <div>Card Number</div>
+            <input ng-model="payForm.name" type="text" size="20" data-stripe="number" placeholder="1234 1234 1234 1234">
+        
+    </div>
+
+
+    <div class="form-row">
+        <label>
+            <span>Expiration (MM/YY)</span>
+            <input ng-model="payForm.mm" type="text" size="2" data-stripe="exp_month" placeholder="MM">
+			<input ng-model="payForm.yy" type="text" size="2" data-stripe="exp_year" placeholder="YY">
+        </label>
+    </div>
+
+    <div class="form-row">
+        <label>
+            <span>CVC</span>
+            <input id="cvd" ng-model="payForm.ccv" type="text" size="4" data-stripe="cvc" placeholder="***">
+        </label>
+    </div>
+    <input type="submit" class="btn btn-inverse" value="Submit Payment">
+</form>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</body>
+

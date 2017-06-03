@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+	<head>
+		<meta charset="utf-8">
+		<title>Furniture</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<!--[if ie]><meta content='IE=8' http-equiv='X-UA-Compatible'/><![endif]-->
+		<!-- bootstrap -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">      
+		<link href="css/bootstrap-responsive.min.css" rel="stylesheet">		
+		<link href="css/bootstrappage.css" rel="stylesheet"/>
+		
+		<!-- global styles -->
+		<link href="css/flexslider.css" rel="stylesheet"/>
+		<link href="css/main.css" rel="stylesheet"/>
+
+		<!-- scripts -->
+		<script src="js/jquery-1.7.2.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>				
+		<script src="js/superfish.js"></script>	
+		<script src="js/jquery.scrolltotop.js"></script>
+	</head>
+    <body><div id="top-bar" class="container">
+			<div class="row">
+				<div class="span4">
+					
+				</div>
+				<div class="span8">
+					<div class="account pull-right">
+						<ul class="user-menu">				
+							<li><a href="#userdetail"> {{ username }} </a></li>
+							<li><a href="#home">Home</a></li>
+							<li><a href="#cart">Your Cart</a></li>
+							<li><a href="#orders">Orders</a></li>	
+							<li><a href="#login">{{loginlogout}}</a></li>		
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="wrapper" class="container">
+			<section class="navbar main-menu">
+				<div class="navbar-inner main-menu">				
+					<a href="index.html" class="logo pull-left"><img src="img/logo.png" class="site_logo" alt=""></a>
+					<nav id="menu" class="pull-right">
+						<ul>
+							<li><a href="">Room</a>					
+								<ul>
+									<li><a href="#bedroom">Bedroom</a></li>									
+									<li><a href="#livingroom">Living Room</a></li>
+									<li><a href="#diningroom">Kitchen and Dining Room</a></li>									
+									<li><a href="#studyroom">Study Room</a></li>								
+								</ul>
+							</li>
+							<div class="span1">
+							</div>
+							<li><a href="#sale">Sale</a></li>
+							<div class="span1">
+							</div>
+						</ul>
+					</nav>
+				</div>							
+			<div>
+				<div id="wrapper" class="container">
+		<div ng-view>
+		</div>
+		</div>	
+			</div>
+			
+			<section id="footer-bar">
+				<div class="row">
+					<div class="span6">
+						<h4>Navigation</h4>
+						<ul class="nav">
+							<li><a href="#home">Home</a></li>
+							<li><a href="#contact">Contact Us</a></li>
+							<li><a href="#cart">Your Cart</a></li>
+							<li><a href="#faq">FAQ</a></li>
+						</ul>					
+					</div>
+					<div class="span6">
+						<h4>My Account</h4>
+						<ul class="nav">
+							<li><a href="#userdetail">My Information</a></li>
+						</ul>
+					</div>					
+				</div>	
+			</section>
+		</div>
+		<script src="js/common.js"></script>
+		<script>
+			$(document).ready(function() {
+				$('#checkout').click(function (e) {
+					document.location.href = "checkout.html";
+				})
+			});
+		</script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.12/angular.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular-route.min.js"></script>
+    <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+		<script src="controllers/controller.js">
+		<script src="js/common.js"></script>
+		</script>
+		
+    </body>
+</html>
