@@ -13,8 +13,7 @@ This repo contains the code for a RESTful API e commerce furniture website that 
 
 <h3>Instructions</h3>
 
-download the zip file from
-    https://github.com/purva5194/furniture.git
+download the zip file 
 
 then install the Node modules with
 
